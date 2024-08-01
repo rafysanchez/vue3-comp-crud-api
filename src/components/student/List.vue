@@ -96,7 +96,102 @@ const deleteStudent = async (id) => {
     >
       Student Deleted Successfully
     </div>
+    <!-- add a footer fixed in the botton-->
+    <footer class="bg-slate-600 text-white p-4 text-center">
+      <p>
+        <span class="text-2xl font-bold">
+          empresa demo  -  
+          <span class="text-emerald-500">
+            &nbsp;  email@email.com
+            <div class="text-2xl">
+              <a
+                href="https://www.linkedin.com/in/shubham-kumar-212683191
+                  "
+              >
+                <img
+                  src="https://img.icons8.com/fluent/48/000000/linkedin.png"
+                  width="25"
+                  height="25"
+                />
+              </a>
+              <a href="https://github.com/shubham-kumar1997">
+                <img
+                  src="https://img.icons8.com/fluent/48/000000/github.png"
+                  width="25"
+                  height="25"
+                />
+              </a>
+              <a href="https://twitter.com/shubhamkumar1997">
+                <img
+                  src="https://img.icons8.com/fluent/48/000000/twitter.png"
+                  width="25"
+                  height="25"
+                />
+              </a>
+            </div>
+          </span>
+        </span>
+      </p>
+    </footer>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* add a margind in between the table and the heading */
+.table-auto {
+  margin-top: 2rem;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* add border to the table and make the rows  grey / white in odd rows** */
+table,
+tr,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* in the body add 1o px in the top, rigt, left, botton of the page*/
+body {
+  margin: 10px;
+}
+
+/* formata o footer para ficar os links ( social media  ) na horizontal make all at once*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #bce066;
+  display: flex;
+  justify-content: center;
+}
+
+/* add a hover effect to the social media icons */
+footer a:hover {
+  opacity: 0.8;
+}
+
+.text-2xl{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  display: 	flex;
+ 
+
+
+}
+
+.text-2xl a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+
+}
+
+</style>
